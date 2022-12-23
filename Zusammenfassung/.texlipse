@@ -1,11 +1,11 @@
 #TeXlipse project settings
-#Tue Sep 27 12:22:53 CEST 2022
+#Fri Dec 23 09:44:14 CET 2022
 outputDir=
 markDer=true
-mainTexFile=Projektarbeit.tex
+mainTexFile=Zusammenfassung.tex
 bibrefDir=
 builderNum=2
-outputFile=Projektarbeit.pdf
+outputFile=Zusammenfassung.pdf
 makeIndSty=
 srcDir=
 markTmpDer=true
