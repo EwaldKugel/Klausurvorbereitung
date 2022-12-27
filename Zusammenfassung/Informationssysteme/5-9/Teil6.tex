@@ -1,0 +1,49 @@
+\subsubsection{Störungsmanagement und Problemmanagement}
+Prozessmodell Störungsmanagement
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{assets/Störungsmanagement.png}
+\end{figure}
+
+Problemmanagement
+
+\begin{itemize}
+  \item Durchführung tiefgehender Diagnosen zur Problemlösung
+  \item tiefes technisches Verständnis für IS-Architektur und IS nötig
+  \item Problemdatenbank als zentraler Baustein
+\end{itemize}
+
+Vorgehensweisen beim Problemmanagement
+
+\begin{itemize}
+  \item unbekannte Probleme werden in Datenbank erfasst und analysiert
+  \item Klassifikation des Problems
+  \item Diagnose
+  \item Fehlerbehandlung
+  \item Dokumentation $\rightarrow$ unbekanntes Problem wird zu bekanntem Fehler
+\end{itemize}
+
+\subsubsection{Betrieb von Legacy Systemen}
+
+\begin{itemize}
+  \item veraltete Hardware und oder Technologien
+  \item unterschiedlichste Gründe, dass bisher nicht ersetzt/modernisiert wurde
+  \item \textbf{Ballast} und \textbf{Bremse} für Modernisierung und Optimierung
+  \item zumeist wichtige (Kern-)Komponente für regelmäßige Aufgaben
+  \item Ziel sollte sein, früh zu investieren
+  \item End-of-life anstreben $\rightarrow$ Außerbetriebnahme mit Nachfolger oder Wegfall der Aufgabe
+  \item Zusammenarbeit über definierte Schnittstelle (nicht unbedingt einfach)
+\end{itemize}
+
+\clearpage
+\subsubsection{Containerisierung mit Docker}
+
+\begin{itemize}
+  \item Container als leichtgewichtige Alternative zu VM's
+  \item Dockerfile (Image) und Compose-Datei (Services, Abhängigkeiten zw. Containern) beliebig komplex
+  \item mit Docker-Compose kann eine Anwendung aus mehreren Containern bestehen, bspw. Services oder Datenbankserver die in eigenen Containern laufen
+  \item bietet die Möglichkeit legacy apps auf moderner Hardware zu betreiben
+  \item Abschottung von Containerschichten ermöglicht (temporären) Weiterbetrieb veralterter unsicherer Software
+  \item Kubernetes als Verwaltungstool für Container $\rightarrow$ Rechenzentren müssen viele Container verwalten
+\end{itemize}
